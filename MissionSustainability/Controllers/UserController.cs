@@ -9,8 +9,12 @@ using MissionSustainability.Models;
 
 namespace MissionSustainability.Controllers
 {
+    [Route("api/user")]
+    [ApiController]
     public class UserController : Controller
     {
+        // private readonly QuizContext _context;
+
         // GET: /<controller>/
         public IActionResult Quiz()
         {
@@ -28,6 +32,12 @@ namespace MissionSustainability.Controllers
         public IActionResult QuizResults()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult<Quiz> SubmitQuiz(UserQuiz quiz)
+        {
+
         }
     }
 }

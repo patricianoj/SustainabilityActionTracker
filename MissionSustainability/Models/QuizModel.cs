@@ -7,12 +7,12 @@ namespace MissionSustainability.Models
     {
         public Quiz()
         {
+
         }
 
-        // TO DO: when updating quiz on website, update version
-        private int version;
-        public int numQuestions { get; set; }
+        // TO DO: when updating quiz on website, update version?
+        // public int numQuestions { get; set; }
         public List<Question> questions { get; set; }
-        public bool IsComplete { get; set; }
+        // public bool isComplete { get; set; }
     }
 }

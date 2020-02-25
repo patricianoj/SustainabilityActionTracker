@@ -12,4 +12,8 @@
   <ItemGroup>
     <Folder Include="Views\Quiz\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\UserController.cs" />
+    <Compile Remove="Models\UserQuiz.cs" />
+  </ItemGroup>
 </Project>

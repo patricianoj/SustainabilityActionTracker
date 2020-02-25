@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability/MissionSustainability.csproj": {}
+    "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability.csproj": {}
   },
   "projects": {
-    "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability/MissionSustainability.csproj": {
+    "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability/MissionSustainability.csproj",
+        "projectUniqueName": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability.csproj",
         "projectName": "MissionSustainability",
-        "projectPath": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability/MissionSustainability.csproj",
+        "projectPath": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability.csproj",
         "packagesPath": "/Users/patricia/.nuget/packages/",
-        "outputPath": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/MissionSustainability/obj/",
+        "outputPath": "/Users/patricia/Documents/GitHub/SustainabilityActionTracker/MissionSustainability/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/patricia/.config/NuGet/NuGet.Config"
