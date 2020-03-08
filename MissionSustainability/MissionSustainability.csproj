@@ -16,4 +16,33 @@
     <Compile Remove="Controllers\UserController.cs" />
     <Compile Remove="Models\UserQuiz.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\dist\spProject\fa-brands-400.svg" />
+    <None Include="wwwroot\dist\spProject\fa-brands-400.woff2" />
+    <None Include="wwwroot\dist\spProject\fa-regular-400.svg" />
+    <None Include="wwwroot\dist\spProject\fa-regular-400.woff2" />
+    <None Include="wwwroot\dist\spProject\fa-solid-900.svg" />
+    <None Include="wwwroot\dist\spProject\fa-solid-900.woff2" />
+    <None Include="wwwroot\dist\spProject\img\avataaars.svg" />
+    <None Include="wwwroot\dist\spProject\main-es2015.js" />
+    <None Include="wwwroot\dist\spProject\main-es2015.js.map" />
+    <None Include="wwwroot\dist\spProject\main-es5.js" />
+    <None Include="wwwroot\dist\spProject\main-es5.js.map" />
+    <None Include="wwwroot\dist\spProject\polyfills-es2015.js" />
+    <None Include="wwwroot\dist\spProject\polyfills-es2015.js.map" />
+    <None Include="wwwroot\dist\spProject\polyfills-es5.js" />
+    <None Include="wwwroot\dist\spProject\polyfills-es5.js.map" />
+    <None Include="wwwroot\dist\spProject\runtime-es2015.js" />
+    <None Include="wwwroot\dist\spProject\runtime-es2015.js.map" />
+    <None Include="wwwroot\dist\spProject\runtime-es5.js" />
+    <None Include="wwwroot\dist\spProject\runtime-es5.js.map" />
+    <None Include="wwwroot\dist\spProject\styles-es2015.js" />
+    <None Include="wwwroot\dist\spProject\styles-es2015.js.map" />
+    <None Include="wwwroot\dist\spProject\styles-es5.js" />
+    <None Include="wwwroot\dist\spProject\styles-es5.js.map" />
+    <None Include="wwwroot\dist\spProject\vendor-es2015.js" />
+    <None Include="wwwroot\dist\spProject\vendor-es2015.js.map" />
+    <None Include="wwwroot\dist\spProject\vendor-es5.js" />
+    <None Include="wwwroot\dist\spProject\vendor-es5.js.map" />
+  </ItemGroup>
 </Project>
