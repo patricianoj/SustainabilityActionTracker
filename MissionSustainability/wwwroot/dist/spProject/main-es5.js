@@ -139,7 +139,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = " <div class=\"jumbotron\">\n    <h1>Figure out how you can make a difference</h1>\n    <a class=\"btn btn-lg btn-primary\" role=\"button\">Take Quiz! </a>\n  </div>\n\n  <div class=\"container\">\n    <!-- Example row of columns -->\n    <div class=\"row\">\n      <div class=\"col-md-4\">\n        <h2>My Badges</h2>\n        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n        <p><a class=\"btn btn-secondary\" routerLink='/badges' role=\"button\">See My Badges &raquo;</a></p>\n      </div>\n      <div class=\"col-md-4\">\n        <h2>Mission Sustainable </h2>\n        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\n        <p><a class=\"btn btn-secondary\" href=\"#\" role=\"button\">Learn More &raquo;</a></p>\n      </div>\n      <div class=\"col-md-4\">\n        <h2>All Badges</h2>\n        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\n        <p><a class=\"btn btn-secondary\" href=\"#\" role=\"button\">All Badges &raquo;</a></p>\n      </div>\n    </div>\n\n\n<app-badge-search></app-badge-search>";
+    __webpack_exports__["default"] = "<header class=\"masthead bg-primary text-white text-center\">\n  <div class=\"container d-flex align-items-center flex-column\">\n\n    <!-- Masthead Avatar Image -->\n    <img class=\"masthead-avatar mb-5\" src=\"/img/portfolio/missionSustainableLogo.png\" alt=\"\">\n\n    <!-- Masthead Heading -->\n    <h1 class=\"masthead-heading text-uppercase mb-0\">Figure out how you can make a difference</h1>\n\n    <!-- Icon Divider -->\n    <div class=\"divider-custom divider-light\">\n      <div class=\"divider-custom-line\"></div>\n      <div class=\"divider-custom-icon\">\n        <i class=\"fas fa-star\"></i>\n      </div>\n      <div class=\"divider-custom-line\"></div>\n    </div>\n    <!-- Masthead Subheading -->\n    <h2><a class=\"btn btn-lg btn-primary\" routerLink = \"/quiz\" role=\"button\">Take Quiz!</a></h2>\n  </div>\n</header>\n<section class=\"page-section portfolio\" id=\"portfolio\">\n  <div class=\"container\">\n\n    <!-- Portfolio Section Heading -->\n    <h2 class=\"page-section-heading text-center text-uppercase text-secondary mb-0\">Mission Sustainable</h2>\n\n    <!-- Icon Divider -->\n    <div class=\"divider-custom\">\n      <div class=\"divider-custom-line\"></div>\n      <div class=\"divider-custom-icon\">\n        <i class=\"fas fa-star\"></i>\n      </div>\n      <div class=\"divider-custom-line\"></div>\n    </div>\n\n    <!-- Portfolio Grid Items -->\n    <div class=\"row\">\n\n      <!-- Portfolio Item 1 -->\n      <div class=\"col-md-6 col-lg-4\">\n        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal1\">\n          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n            <div class=\"portfolio-item-caption-content text-center text-white\">\n              <i class=\"fas fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <h1>My Badges </h1>\n          <!--<img class=\"img-fluid\" src=\"img/portfolio/cabin.png\" alt=\"\">-->\n        </div>\n      </div>\n\n      <!-- Portfolio Item 2 -->\n      <div class=\"col-md-6 col-lg-4\">\n        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal2\">\n          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n            <div class=\"portfolio-item-caption-content text-center text-white\">\n              <i class=\"fas fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <h1> All Badges</h1>\n         <!--<img class=\"img-fluid\" src=\"img/portfolio/cake.png\" alt=\"\">-->\n        </div>\n      </div>\n\n      <!-- Portfolio Item 3 -->\n      <div class=\"col-md-6 col-lg-4\">\n        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal3\">\n          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n            <div class=\"portfolio-item-caption-content text-center text-white\">\n              <i class=\"fas fa-plus fa-3x\"></i>\n            </div>\n          </div>\n          <h1>About Mission Sustainable</h1>\n         <!-- <img class=\"img-fluid\" src=\"img/portfolio/circus.png\" alt=\"\">-->\n        </div>\n      </div>\n\n\n    </div>\n\n  </div>\n</section>\n\n\n\n<app-badge-search></app-badge-search>";
     /***/
   },
 
@@ -179,7 +179,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav class=\"navbar navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Never expand</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExample01\" aria-controls=\"navbarsExample01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarsExample01\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"dropdown01\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown</a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"dropdown01\">\n          <a class=\"dropdown-item\" href=\"#\">Action</a>\n          <a class=\"dropdown-item\" href=\"#\">Another action</a>\n          <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n        </div>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-md-0\">\n      <input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n    </form>\n  </div>\n</nav>\n<main role=\"main\" class=\"container\">\n  <app-dashboard></app-dashboard>\n  \n  </main>\n \n \n \n";
+    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg bg-secondary text-uppercase fixed-top\" id=\"mainNav\">\n  <div class=\"container\">\n    <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Mission Sustainable</a>\n    <button class=\"navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      Menu\n      <i class=\"fas fa-bars\"></i>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item mx-0 mx-lg-1\">\n          <a class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\" href=\"#portfolio\">Badges</a>\n        </li>\n        <li class=\"nav-item mx-0 mx-lg-1\">\n          <a class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\" routerLink = \"/quiz\">Quiz</a>\n        </li>\n        <li class=\"nav-item mx-0 mx-lg-1\">\n          <a class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\" href=\"#contact\">My Info</a>\n        </li>\n        <li class=\"nav-item mx-0 mx-lg-1\">\n          <a class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\" href=\"#contact\">Login</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n\n\n  <app-dashboard></app-dashboard>\n  \n \n \n \n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html ***!
+    \****************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppQuestionQuestionComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<main role=\"main\" class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>Water</h1>\n      <p class=\"lead\">Test Question: Are you sustainable?</p>\n      <a class=\"btn btn-lg btn-primary\" role=\"button\">Yes</a>\n      <a class=\"btn btn-lg btn-primary\" role=\"button\">No</a>\n      <a class=\"btn btn-lg btn-primary\" role=\"button\">Not Applicable</a>\n    </div>\n  </main>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/quiz/quiz.component.html":
+  /*!********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/quiz/quiz.component.html ***!
+    \********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppQuizQuizComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<main role=\"main\" class=\"container\">\n    <div class=\"jumbotron\">\n      <h1>Quiz</h1>\n     <app-question></app-question>\n      <a class=\"btn btn-lg btn-primary\" role=\"button\">Cancel </a>\n      <a class=\"btn btn-lg btn-primary\" role=\"button\">Save Quiz and Exit</a>\n    </div>\n  </main>\n";
     /***/
   },
 
@@ -834,7 +874,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _page_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./quiz/quiz.component */
+    "./src/app/quiz/quiz.component.ts");
+    /* harmony import */
+
+
+    var _question_question_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./question/question.component */
+    "./src/app/question/question.component.ts");
+    /* harmony import */
+
+
+    var _page_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./page/page.component */
     "./src/app/page/page.component.ts");
 
@@ -853,7 +905,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _badges_badges_component__WEBPACK_IMPORTED_MODULE_4__["BadgesComponent"]
     }, {
       path: 'page',
-      component: _page_page_component__WEBPACK_IMPORTED_MODULE_6__["PageComponent"]
+      component: _page_page_component__WEBPACK_IMPORTED_MODULE_8__["PageComponent"]
+    }, {
+      path: 'question',
+      component: _question_question_component__WEBPACK_IMPORTED_MODULE_7__["QuestionComponent"]
+    }, {
+      path: 'quiz',
+      component: _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_6__["QuizComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -1046,6 +1104,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _page_page_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./page/page.component */
     "./src/app/page/page.component.ts");
+    /* harmony import */
+
+
+    var _question_question_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ./question/question.component */
+    "./src/app/question/question.component.ts");
+    /* harmony import */
+
+
+    var _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! ./quiz/quiz.component */
+    "./src/app/quiz/quiz.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -1058,7 +1128,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       angular_in_memory_web_api__WEBPACK_IMPORTED_MODULE_5__["HttpClientInMemoryWebApiModule"].forRoot(_in_memory_data_service__WEBPACK_IMPORTED_MODULE_6__["InMemoryDataService"], {
         dataEncapsulation: false
       })],
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["DashboardComponent"], _badges_badges_component__WEBPACK_IMPORTED_MODULE_11__["BadgesComponent"], _badge_detail_badge_detail_component__WEBPACK_IMPORTED_MODULE_10__["BadgeDetailComponent"], _messages_messages_component__WEBPACK_IMPORTED_MODULE_13__["MessagesComponent"], _badge_search_badge_search_component__WEBPACK_IMPORTED_MODULE_12__["BadgeSearchComponent"], _page_page_component__WEBPACK_IMPORTED_MODULE_14__["PageComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_9__["DashboardComponent"], _badges_badges_component__WEBPACK_IMPORTED_MODULE_11__["BadgesComponent"], _badge_detail_badge_detail_component__WEBPACK_IMPORTED_MODULE_10__["BadgeDetailComponent"], _messages_messages_component__WEBPACK_IMPORTED_MODULE_13__["MessagesComponent"], _badge_search_badge_search_component__WEBPACK_IMPORTED_MODULE_12__["BadgeSearchComponent"], _question_question_component__WEBPACK_IMPORTED_MODULE_15__["QuestionComponent"], _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_16__["QuizComponent"], _page_page_component__WEBPACK_IMPORTED_MODULE_14__["PageComponent"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
     /***/
@@ -2104,6 +2174,164 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./page.component.css */
       "./src/app/page/page.component.css")).default]
     })], PageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/question/question.component.css":
+  /*!*************************************************!*\
+    !*** ./src/app/question/question.component.css ***!
+    \*************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppQuestionQuestionComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "a{\r\n    margin-left: 50px;\r\n}\r\n.jumbotron{\r\n    color: red;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcXVlc3Rpb24vcXVlc3Rpb24uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksVUFBVTtBQUNkIiwiZmlsZSI6InNyYy9hcHAvcXVlc3Rpb24vcXVlc3Rpb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImF7XHJcbiAgICBtYXJnaW4tbGVmdDogNTBweDtcclxufVxyXG4uanVtYm90cm9ue1xyXG4gICAgY29sb3I6IHJlZDtcclxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/question/question.component.ts":
+  /*!************************************************!*\
+    !*** ./src/app/question/question.component.ts ***!
+    \************************************************/
+
+  /*! exports provided: QuestionComponent */
+
+  /***/
+  function srcAppQuestionQuestionComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "QuestionComponent", function () {
+      return QuestionComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var QuestionComponent =
+    /*#__PURE__*/
+    function () {
+      function QuestionComponent() {
+        _classCallCheck(this, QuestionComponent);
+      }
+
+      _createClass(QuestionComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return QuestionComponent;
+    }();
+
+    QuestionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-question',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./question.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/question/question.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./question.component.css */
+      "./src/app/question/question.component.css")).default]
+    })], QuestionComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/quiz/quiz.component.css":
+  /*!*****************************************!*\
+    !*** ./src/app/quiz/quiz.component.css ***!
+    \*****************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppQuizQuizComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "a{\r\n    margin-left: 50px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcXVpei9xdWl6LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9xdWl6L3F1aXouY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImF7XHJcbiAgICBtYXJnaW4tbGVmdDogNTBweDtcclxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/quiz/quiz.component.ts":
+  /*!****************************************!*\
+    !*** ./src/app/quiz/quiz.component.ts ***!
+    \****************************************/
+
+  /*! exports provided: QuizComponent */
+
+  /***/
+  function srcAppQuizQuizComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "QuizComponent", function () {
+      return QuizComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var QuizComponent =
+    /*#__PURE__*/
+    function () {
+      function QuizComponent() {
+        _classCallCheck(this, QuizComponent);
+      }
+
+      _createClass(QuizComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return QuizComponent;
+    }();
+
+    QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-quiz',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./quiz.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/quiz/quiz.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./quiz.component.css */
+      "./src/app/quiz/quiz.component.css")).default]
+    })], QuizComponent);
     /***/
   },
 
