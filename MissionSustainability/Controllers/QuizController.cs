@@ -21,38 +21,29 @@ namespace MissionSustainability.Controllers
 
         // get on api/quiz
         [HttpGet]
-        public ActionResult<Quiz> GetQuiz()
+        public ActionResult<List<string>> GetQuiz()
         {
-            Quiz quiz = new Quiz();
-            List<Question> questions = new List<Question>();
-            List<KeyValuePair<string, int>> answers = new List<KeyValuePair<string, int>>();
-            answers.Add(new KeyValuePair<string, int>("answerchoice1",1));
-            Badge testBadge = new Badge("Water", "Water Queen", 1, 1);
-            Question q1 = new Question("This would be the question?", testBadge, Option.Yes);
-            questions.Add(q1);
-            quiz.questions = questions;
-            return quiz;
+            List<string> questions = new List<string>();
+            questions.Add("Example question?");
+            return questions;
         }
 
         [HttpPost]
-        public ActionResult<Quiz> SubmitQuiz([FromBody] User user)
+        public ActionResult<User> SubmitQuiz([FromBody] List<Badge> badges, [FromQuery] string email)
         {
-            if (user is null)
+            /* TO DO: Check for completion, store in database */
+
+            if (email is null)
             {
-                throw new ArgumentNullException(nameof(user));
+                throw new ArgumentNullException(nameof(email));
             }
 
-            foreach (Question question in user.questions) // Loop through List with foreach
-            {
-                if(question.choice == Option.Yes)
-                {
-                    question.associatedBadge.completeBadge();
-                    user.badges.Add(question.associatedBadge);
-                }
-            }
+            User user = new User();
+            user.email = email;
+            user.badges = badges;
             user.quizTaken = true;
-            /* TO DO: Check for completion, store in database */
-            return Accepted();
+          
+            return user;
         }
     }
 }
