@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MissionSustainability.Models
 {
@@ -9,7 +10,8 @@ namespace MissionSustainability.Models
         {
         }
 
-        public string email; // from google passport or ID
+        [Key]
+        public string email { get; set; }
         public bool quizTaken { get; set; }
         public List<Badge> badges { get; set; }
     }

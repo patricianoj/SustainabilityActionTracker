@@ -1,35 +1,42 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C8A94F14-479E-43D6-8D33-412036CBB223}|Default">
   <MonoDevelop.Ide.ItemProperties.MissionSustainability PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MissionSustainability/Models/Helper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MissionSustainability/Models/DBUserRepository.cs">
     <Files>
       <File FileName="MissionSustainability/Models/QuizModel.cs" Line="19" Column="1" />
       <File FileName="MissionSustainability/Models/Question.cs" />
-      <File FileName="MissionSustainability/Properties/launchSettings.json" />
+      <File FileName="MissionSustainability/Properties/launchSettings.json" Line="1" Column="1" />
       <File FileName="MissionSustainability/Controllers/UserController.cs" />
-      <File FileName="MissionSustainability/Models/ErrorViewModel.cs" />
+      <File FileName="MissionSustainability/Models/ErrorViewModel.cs" Line="3" Column="11" />
       <File FileName="MissionSustainability/Properties/PublishProfiles/MissionSustainability - Web Deploy.pubxml" />
-      <File FileName="MissionSustainability/Models/Badge.cs" />
-      <File FileName="MissionSustainability/Models/User.cs" />
-      <File FileName="MissionSustainability/Startup.cs" />
-      <File FileName="MissionSustainability/Controllers/HomeController.cs" />
-      <File FileName="MissionSustainability/appsettings.json" />
-      <File FileName="MissionSustainability/Program.cs" />
+      <File FileName="MissionSustainability/Models/Badge.cs" Line="1" Column="1" />
+      <File FileName="MissionSustainability/Models/User.cs" Line="17" Column="1" />
+      <File FileName="MissionSustainability/Startup.cs" Line="39" Column="11" />
+      <File FileName="MissionSustainability/Controllers/HomeController.cs" Line="52" Column="22" />
+      <File FileName="MissionSustainability/appsettings.json" Line="14" Column="1" />
+      <File FileName="MissionSustainability/Program.cs" Line="1" Column="1" />
       <File FileName="MissionSustainability/Pages/Error.cshtml" />
-      <File FileName="MissionSustainability/Controllers/QuizController.cs" />
+      <File FileName="MissionSustainability/Controllers/QuizController.cs" Line="6" Column="1" />
       <File FileName="MissionSustainability/wwwroot/js/site.js" />
       <File FileName="MissionSustainability/Controllers/AdminController.cs" Line="29" Column="1" />
-      <File FileName="MissionSustainability/Controllers/BadgeController.cs" />
-      <File FileName="MissionSustainability/Models/Helper.cs" Line="11" Column="1" />
+      <File FileName="MissionSustainability/Controllers/BadgeController.cs" Line="129" Column="32" />
+      <File FileName="MissionSustainability/Models/Helper.cs" Line="28" Column="1" />
+      <File FileName="MissionSustainability/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MissionSustainability/Models/DBContext.cs" Line="6" Column="11" />
+      <File FileName="MissionSustainability/Models/IUserRepository.cs" Line="13" Column="6" />
+      <File FileName="MissionSustainability/Models/MockUserRepository.cs" Line="111" Column="32" />
+      <File FileName="MissionSustainability/Models/DBUserRepository.cs" Line="4" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MissionSustainability" expanded="True">
             <Node name="MissionSustainability" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Helper.cs" selected="True" />
+                <Node name="DBUserRepository.cs" selected="True" />
               </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

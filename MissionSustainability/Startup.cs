@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using MissionSustainability.Models;
 
 namespace MissionSustainability
 {
@@ -24,6 +26,11 @@ namespace MissionSustainability
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContextPool<RDSContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
+            // the following determines which repository to use (mock or RDS DB)
+            services.AddTransient<IUserRepository, MockUserRepository>();
+            // services.AddScoped<IUserRepository, DBUserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

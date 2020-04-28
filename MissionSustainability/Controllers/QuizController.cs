@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MissionSustainability.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,6 +14,14 @@ namespace MissionSustainability.Controllers
     [ApiController]
     public class QuizController : Controller
     {
+        private readonly IUserRepository _userRepository;
+        private readonly ILogger _logger;
+        public QuizController(ILogger<BadgeController> logger, IUserRepository userRepository)
+        {
+            _logger = logger;
+            _userRepository = userRepository;
+        }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -31,19 +40,31 @@ namespace MissionSustainability.Controllers
         [HttpPost]
         public ActionResult<User> SubmitQuiz([FromBody] List<Badge> badges, [FromQuery] string email)
         {
-            /* TO DO: Check for completion, store in database */
-
-            if (email is null)
+            if (email == null)
             {
                 throw new ArgumentNullException(nameof(email));
             }
 
-            User user = new User();
-            user.email = email;
-            user.badges = badges;
-            user.quizTaken = true;
-          
-            return user;
+            if (badges == null)
+            {
+                throw new ArgumentNullException(nameof(badges));
+            }
+
+            /* TO DO: Check for completion, store in database */
+            var user = _userRepository.GetUser(email);
+            if(user != null && user.quizTaken == false)
+            {
+                user.badges = badges;
+                user.quizTaken = true;
+                return user;
+            }
+
+            if(user.quizTaken == true)
+            {
+                return Ok(new { message = "Quiz already taken" });
+            }
+
+            return null;
         }
     }
 }
