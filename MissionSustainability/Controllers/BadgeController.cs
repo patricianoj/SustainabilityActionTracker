@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MissionSustainability.Models;
@@ -29,6 +30,7 @@ namespace MissionSustainability.Controllers
         }
 
         // get on api/badge
+        [EnableCors]
         [HttpGet]
         public ActionResult<List<Badge>> GetBadges([FromQuery] string email)
         {
