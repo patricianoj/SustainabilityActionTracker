@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MissionSustainability.Models;
@@ -29,11 +30,15 @@ namespace MissionSustainability.Controllers
         }
 
         // get on api/quiz
+        [EnableCors]
         [HttpGet]
         public ActionResult<List<string>> GetQuiz()
         {
             List<string> questions = new List<string>();
-            questions.Add("Example question?");
+            questions.Add("Have you turned off the shower faucet while  shampooing/soaping up?");
+            questions.Add("Have you installed a toilet tank bank, a low-cost, effective way to reduce the amount of water flushed");
+            questions.Add("Have you turned off the faucet when soaping up hands?");
+            questions.Add("Have you reported any leaks or  broken sprinklers to  Facilities-CSC@scu.edu");
             return questions;
         }
 
