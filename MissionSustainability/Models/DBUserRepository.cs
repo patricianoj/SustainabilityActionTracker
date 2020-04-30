@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MissionSustainability.Models
 {
@@ -28,6 +29,13 @@ namespace MissionSustainability.Models
                 context.SaveChanges();
             }
             return foundUser;
+        }
+
+        public List<Badge> GetAdminBadges()
+        {
+            var users = GetAllUsers();
+            var admin = users.FirstOrDefault(u => u.isAdmin == true);
+            return admin.badges;
         }
 
         public IEnumerable<User> GetAllUsers()

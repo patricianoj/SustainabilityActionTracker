@@ -37,9 +37,27 @@ namespace MissionSustainability.Controllers
             var user = _userRepository.GetUser(email);
             if(user != null)
             {
-                return user.badges;
+                if(user.badges != null)
+                {
+                    return user.badges;
+                }
+                else
+                {
+                    // user has not taken quiz yet
+                    // use this to get quiz
+                    var badges = _userRepository.GetAdminBadges();
+                    if(badges == null)
+                    {
+                        return BadRequest(new { message = "No admin found" });
+                    }
+                    else
+                    {
+                        return badges;
+                    }
+                }
             }
-            return NotFound(new { message = "User not found in database" });
+            
+            return BadRequest(new { message = "User not found in database" });
         }
 
         // post on api/badge

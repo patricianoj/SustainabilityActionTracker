@@ -112,8 +112,9 @@ namespace MissionSustainability.Models
 
             _userList = new List<User>()
             {
-                new User() {email="pornelas@scu.edu",quizTaken=true,badges=badges},
-                new User() {email="ghilerio@scu.edu",quizTaken=false,badges=null},
+                new User() {email="pornelas@scu.edu",quizTaken=true,isAdmin=true,badges=badges},
+                new User() {email="ghilerio@scu.edu",quizTaken=false,isAdmin=false,badges=null},
+                new User() {email="itermaat@scu.edu",quizTaken=true,isAdmin=false,badges=badges},
             };
         }
 
@@ -131,6 +132,16 @@ namespace MissionSustainability.Models
                 _userList.Remove(user);
             }
             return userFound;
+        }
+
+        public List<Badge> GetAdminBadges()
+        {
+            var admin = _userList.FirstOrDefault(u => u.isAdmin == true);
+            if(admin == null)
+            {
+                return null;
+            }
+            return admin.badges;
         }
 
         public IEnumerable<User> GetAllUsers()

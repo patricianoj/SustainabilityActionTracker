@@ -32,12 +32,13 @@ namespace MissionSustainability.Controllers
         public ActionResult<IEnumerable<string>> GetUsers()
         {
             var users = _userRepository.GetAllUsers();
-            List<string> emails = new List<string>();
+            List<string> info = new List<string>();
             foreach(User user in users) {
-                emails.Add(user.email);
+                var badgesCount = user.badges == null ? 0 : user.badges.Count;
+                info.Add(user.email+" "+ badgesCount.ToString());
             }
 
-            return emails;
+            return info;
         }
 
         public IActionResult Privacy()
@@ -62,6 +63,7 @@ namespace MissionSustainability.Controllers
                 {
                     email = email,
                     quizTaken = false,
+                    isAdmin = false,
                     badges = null
                 };
 
@@ -72,6 +74,7 @@ namespace MissionSustainability.Controllers
             return BadRequest();
         }
 
+        // Delete a user
         [HttpDelete]
         public IActionResult Delete([FromBody] User user)
         {
@@ -82,12 +85,41 @@ namespace MissionSustainability.Controllers
                     var deleted = _userRepository.Delete(user);
                     string msg = deleted != null ? "User delete successful" : "User not found in database";
                     return Ok(new { message = msg });
-
                 }
             }
 
             var errors = ModelState.Values.First().Errors;
             return BadRequest(new JsonResult(errors));
+        }
+
+        [HttpPost]
+        public ActionResult<User> SubmitQuiz([FromBody] List<Badge> badges, [FromQuery] string email)
+        {
+            if (email == null)
+            {
+                throw new ArgumentNullException(nameof(email));
+            }
+
+            if (badges == null)
+            {
+                throw new ArgumentNullException(nameof(badges));
+            }
+
+            var user = _userRepository.GetUser(email);
+            if (user != null)
+            {
+                if (user.quizTaken == false)
+                {
+                    user.badges = badges;
+                    user.quizTaken = true;
+                    return user;
+                }
+                else
+                {
+                    return Ok(new { message = "Quiz already taken" });
+                }
+            }
+            return BadRequest(new { message = "User not found" });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

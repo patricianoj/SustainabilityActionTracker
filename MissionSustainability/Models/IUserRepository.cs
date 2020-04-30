@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MissionSustainability.Models
 {
@@ -10,5 +11,6 @@ namespace MissionSustainability.Models
         User Add(User user);
         User Update(User userChanges);
         User Delete(User user);
+        List<Badge> GetAdminBadges();
     }
 }
