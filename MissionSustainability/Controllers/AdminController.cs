@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MissionSustainability.Models;
@@ -27,7 +28,7 @@ namespace MissionSustainability.Controllers
         {
             return View();
         }
-
+        [EnableCors]
         [HttpPost]
         public ActionResult<Badge> AddQuestion([FromBody] Badge badge, [FromQuery] string email)
         {
@@ -66,6 +67,22 @@ namespace MissionSustainability.Controllers
             }
             var errors = ModelState.Values.First().Errors;
             return BadRequest(new JsonResult(errors));
+        }
+        [EnableCors]
+        [HttpPut]
+        public ActionResult<string> AddQuestion([FromBody] Questions questionsBody)
+        {
+            /* TO DO: Get questions
+             * add question to database
+             * check for errors and return appropriate HttpCode
+             */
+            string[] newQuestions = questionsBody.questions;
+            QuizController.activeQuestions = new List<string>();
+            foreach (string question in newQuestions)
+            {
+                QuizController.activeQuestions.Add(question);
+            }
+            return Ok();
         }
 
         [HttpDelete]

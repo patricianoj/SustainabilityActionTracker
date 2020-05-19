@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using MissionSustainability.Models;
+using MissionSustainability.Controllers;
 
 namespace MissionSustainability
 {
@@ -31,7 +32,9 @@ namespace MissionSustainability
                     builder =>
                     {
                         builder.WithOrigins("http://example.com", "http://localhost:4200",
-                                            "http://www.contoso.com");
+                                            "http://www.contoso.com")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod(); 
                     });
             });
             services.AddControllers();
@@ -48,6 +51,7 @@ namespace MissionSustainability
         {
             if (env.IsDevelopment())
             {
+                QuizController.InitController();
                 app.UseDeveloperExceptionPage();
             }
             else
